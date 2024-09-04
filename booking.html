@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay or Adventure - Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('showing');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Book Your Stay or Adventure</h1>
+        <nav>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Booking Information</h2>
+            <form action="submit_booking.html" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="booking-type">Booking Type:</label><br>
+                <select id="booking-type" name="booking_type" required onchange="toggleBookingOptions()">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="accommodation">Accommodation</option>
+                    <option value="attraction">Attraction</option>
+                </select><br><br>
+
+                <div id="accommodation-options" style="display:none;">
+                    <label for="accommodation">Choose Your Accommodation:</label><br>
+                    <select id="accommodation" name="accommodation">
+                        <option value="four_star_resort">Four-Star Resort</option>
+                        <option value="bed_and_breakfast">Bed & Breakfast</option>
+                        <option value="affordable_hostel">Affordable Hostel</option>
+                        <option value="family_owned_hotel">Family-Owned Hotel</option>
+                    </select><br><br>
+
+                    <label for="checkin">Check-In Date:</label><br>
+                    <input type="date" id="checkin" name="checkin"><br><br>
+                    
+                    <label for="checkout">Check-Out Date:</label><br>
+                    <input type="date" id="checkout" name="checkout"><br><br>
+                </div>
+
+                <div id="attraction-options" style="display:none;">
+                    <label for="attraction">Choose Your Attraction:</label><br>
+                    <select id="attraction" name="attraction">
+                        <option value="sandy_beaches">Sandy Beaches</option>
+                        <option value="volcano_tours">Volcano Tours</option>
+                        <option value="rainforest_adventures">Rainforest Adventures</option>
+                        <option value="fishing_tours">Chartered Fishing Tours</option>
+                        <option value="snorkeling">Snorkeling</option>
+                        <option value="zip_lining">Zip-Lining</option>
+                    </select><br><br>
+
+                    <label for="visit_date">Visit Date:</label><br>
+                    <input type="date" id="visit_date" name="visit_date"><br><br>
+                </div>
+                
+                <label for="requests">Special Requests:</label><br>
+                <textarea id="requests" name="requests" rows="4"></textarea><br><br>
+                
+                <button type="submit" class="book-button">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taniti Tourism. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleBookingOptions() {
+            const bookingType = document.getElementById('booking-type').value;
+            const accommodationOptions = document.getElementById('accommodation-options');
+            const attractionOptions = document.getElementById('attraction-options');
+            
+            if (bookingType === 'accommodation') {
+                accommodationOptions.style.display = 'block';
+                attractionOptions.style.display = 'none';
+            } else if (bookingType === 'attraction') {
+                attractionOptions.style.display = 'block';
+                accommodationOptions.style.display = 'none';
+            } else {
+                accommodationOptions.style.display = 'none';
+                attractionOptions.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

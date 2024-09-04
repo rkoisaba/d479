@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation - Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('showing');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Discover Taniti</h1>
+        <nav>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="accommodation.html" class = "active">Accommodation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Where to Stay</h2>
+            
+            <div>
+                <h3>Four-Star Resort</h3>
+                <img src="resort_placeholder.jpg" alt="Four-Star Resort">
+                <p>Enjoy luxury at our Four-Star Resort, featuring breathtaking views, world-class amenities, and exceptional service.</p>
+                <a href="booking.html" class="book-button">Book Now</a>
+            </div>
+            
+            <div>
+                <h3>Bed & Breakfast</h3>
+                <img src="bnb_placeholder.jpg" alt="Bed & Breakfast">
+                <p>Stay in one of Taniti's charming Bed & Breakfasts, offering cozy accommodations with a personal touch.</p>
+                <a href="booking.html" class="book-button">Book Now</a>
+            </div>
+            
+            <div>
+                <h3>Affordable Hostel</h3>
+                <img src="hostel_placeholder.jpg" alt="Affordable Hostel">
+                <p>Experience budget-friendly accommodation at Taniti’s affordable hostel. Perfect for travelers seeking comfort and value.</p>
+                <a href="booking.html" class="book-button">Book Now</a>
+            </div>
+
+            <div>
+                <h3>Family-Owned Hotels</h3>
+                <img src="family_hotel_placeholder.jpg" alt="Family-Owned Hotels">
+                <p>Choose from our selection of family-owned hotels for a homely and authentic Tanitian experience.</p>
+                <a href="booking.html" class="book-button">Book Now</a>
+            </div>
+
+            <div>
+                <h3>Bed & Breakfast</h3>
+                <img src="bnb_placeholder.jpg" alt="Bed & Breakfast">
+                <p>Enjoy a warm, welcoming stay at one of Taniti's growing number of bed and breakfasts, where hospitality meets comfort.</p>
+                <a href="booking.html" class="book-button">Book Now</a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taniti Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

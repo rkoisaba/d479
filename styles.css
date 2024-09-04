@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4682B4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4682B4;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #6495ED;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #1E90FF;
+}
+
+/* Mobile navigation */
+nav .menu-icon {
+    display: none;
+    float: right;
+    padding: 15px;
+    color: rgb(247, 127, 127);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav ul.showing {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    background-color: #6495ED;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+section img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid #4682B4;
+}
+
+
+@media screen and (max-width: 992px) {
+    section img {
+        width: 250px;
+        height: 170px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    section img {
+        width: 200px;
+        height: 130px;
+    }
+}
+
+.book-button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4682B4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #1E90FF;
+}
+
+.book-button:hover {
+    background-color: #1E90FF;
+    border-color: #6495ED;
+}
+nav ul li a.active {
+    font-weight: bold; 
+    color: #021d33; 
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #4682B4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px; 
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('showing');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Discover Taniti</h1>
+        <nav>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="index.html" class = "active" >Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to Paradise</h2>
+            <div>
+                <img src="beach1.jpg" alt="Sandy Beaches">
+                <img src="forest.jpg" alt="Rainforest Adventures">
+            </div>
+            <p>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches,
+                 a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. </p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taniti Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
