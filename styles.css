@@ -142,3 +142,11 @@ footer {
     margin-top: 20px; 
 }
 
+ul {
+    padding-left: 20px; 
+    list-style-position: inside; 
+}
+
+ul li {
+    margin-bottom: 10px; 
+}

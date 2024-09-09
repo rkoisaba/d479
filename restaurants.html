@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('showing');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dining in Taniti</h1>
+        <nav>
+            <span class="menu-icon" onclick="toggleMenu()">☰</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="accommodation.html">Accommodation</a></li>                
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="restaurants.html" class="active">Restaurants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Where to Eat in Taniti</h2>
+            <p>Taniti offers a wide range of dining options to suit every taste and budget:</p>
+            <ul>
+                <li><strong>Oceanview Restaurant:</strong> Known for its fresh seafood and stunning ocean views. Located near the main beach.</li>
+                <li><strong>Island Grill:</strong> A popular spot for traditional Tanitian dishes and a laid-back atmosphere.</li>
+                <li><strong>The Spice Garden:</strong> Offers a fusion of local and international cuisine, with an emphasis on fresh, local ingredients.</li>
+                <li><strong>Mountain Café:</strong> Nestled in the hills, this café is perfect for enjoying coffee and pastries with a view.</li>
+                <li><strong>Sunset Bistro:</strong> A romantic dining spot, ideal for enjoying dinner while watching the sunset.</li>
+            </ul>
+            <p>Reservations are recommended for dinner, especially during the peak season. Contact your hotel for assistance with bookings.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Taniti Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
